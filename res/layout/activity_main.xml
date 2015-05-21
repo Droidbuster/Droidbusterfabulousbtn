@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity" >
+
+     <RelativeLayout
+       android:id="@+id/fabcontent"
+       android:layout_width="400dp"
+       android:layout_height="200dp"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="34dp" >
+
+       <com.droidbusterfabolous.fabmain
+           android:id="@+id/fabu"
+           android:layout_width="92dp"
+           android:layout_height="92dp"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/fab_shape"
+           android:src="@drawable/fab_ic_add" />
+
+       <com.droidbusterfabolous.fab3
+           android:id="@+id/FAB3"
+           android:layout_width="72dp"
+           android:layout_height="72dp"
+           android:layout_alignParentBottom="true"
+           android:layout_marginRight="15dp"
+           android:layout_toLeftOf="@+id/fab1"
+           android:background="@drawable/fab_shape"
+           android:src="@drawable/ic_supervisor_account_white_48dp" />
+
+       <com.droidbusterfabolous.fab2
+           android:id="@+id/fab2"
+           android:layout_width="72dp"
+           android:layout_height="72dp"
+           android:layout_above="@+id/FAB3"
+           android:layout_toLeftOf="@+id/fabu"
+           android:background="@drawable/fab_shape"
+           android:src="@drawable/ic_chat_white_48dp" />
+
+       <com.droidbusterfabolous.fab1
+           android:id="@+id/fab1"
+           android:layout_width="72dp"
+           android:layout_height="72dp"
+           android:layout_alignLeft="@+id/fabu"
+           android:layout_alignParentTop="true"
+           android:background="@drawable/fab_shape"
+           android:src="@drawable/ic_call_white_48dp" />
+
+   </RelativeLayout>
+
+</RelativeLayout>
